@@ -15,7 +15,7 @@ function App() {
     module: 5,
     targetOuterDiameter: 110,
     pressureAngle: 20,
-    backlash: 0.5,
+    backlash: 2,
     stlThickness: 5,
     exportOptions: {
       includeGear1: true,
@@ -138,15 +138,9 @@ function App() {
         config={config}
         setConfig={setConfig}
         onExport={handleExport}
-        isAnimating={isAnimating}
-        setIsAnimating={setIsAnimating}
         gearStats={gearStats}
-        rpm={rpm}
-        setRpm={setRpm}
         gear1={gear1}
         gear2={gear2}
-        showGrid={showGrid}
-        setShowGrid={setShowGrid}
         effectiveModule={effectiveModule}
       />
 
@@ -156,10 +150,18 @@ function App() {
           gear2={gear2}
           centerDistance={centerDistance}
           isAnimating={isAnimating}
+          setIsAnimating={setIsAnimating}
           rotationSpeed={rotationSpeed}
+          rpm={rpm}
+          setRpm={setRpm}
           showGrid={showGrid}
+          setShowGrid={setShowGrid}
           zoom={zoom}
           setZoom={setZoom}
+          config={config}
+          setConfig={setConfig}
+          gearStats={gearStats}
+          onExport={handleExport}
         />
       </main>
     </div>
