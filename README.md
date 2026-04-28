@@ -40,7 +40,3 @@ npm run build
 - DXF는 가벼운 `LWPOLYLINE`/`CIRCLE` 중심의 2D 형식입니다. CAD/CAM 도구별 열림 상태는 실제 장비 흐름에서 한 번 더 확인해야 합니다.
 - STL은 2D 치형을 설정한 두께만큼 직선 돌출한 ASCII STL입니다. 축 구멍은 관통 구멍으로 반영됩니다.
 - 여러 부품을 함께 내보낼 때는 맞물림 위치가 아니라 출력용 분리 배치로 저장합니다. 부품 간격은 내보내기 설정에서 조정합니다.
-
-## 배포
-
-GitHub Pages 배포는 `.github/workflows/deploy.yml`을 사용합니다. `main` 브랜치에 push하면 lint, test, build 후 `dist` 폴더가 Pages로 배포됩니다.
